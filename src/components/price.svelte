@@ -50,8 +50,9 @@
 	.price__tarif {
 		position: relative;
 		display: grid;
+		grid-template-rows: 10% min(30vh 600px) 10%;
 		border-radius: 5px;
-		padding: 5px;
+		padding: 1vh 1vw;
 		background-image: radial-gradient(
 				circle at 99% 33%,
 				hsla(235, 0%, 48%, 0.03) 0%,
@@ -94,11 +95,39 @@
 		align-self: start;
 		justify-self: center;
 		white-space: pre-wrap;
+		text-align: center;
+	}
+	@counter-style repeating-emoji {
+		system: cyclic;
+		symbols: '🐏';
+		suffix: ' ';
+	}
+
+	/* // Add this class to the ul or ol element */
+	.repeating-counter-rule {
+		list-style-type: repeating-emoji;
 	}
 	.price__tarif > ul {
 		align-self: stretch;
 		margin-top: 5vh;
 		margin-bottom: 5vh;
+		list-style-type: '🐏 ';
+		/* list-style: none; */
+		/* padding: 0;
+		margin: 0; */
+	}
+	/* .price__tarif > ul > li {
+		padding-left: 1rem;
+		text-indent: -0.7rem;
+	} */
+
+	/* .price__tarif > ul > li::before {
+		content: '🐏  ';
+	} */
+
+	.price__tarif > h4 {
+		place-self: center;
+		white-space: pre-wrap;
 	}
 	/* .price__tarif::before {
     content: "";

@@ -52,44 +52,29 @@
 		display: grid;
 		grid-template-rows: 10% min(30vh 600px) 10%;
 		border-radius: 5px;
-		padding: 1vh 1vw;
-		background-image: radial-gradient(
-				circle at 99% 33%,
-				hsla(235, 0%, 48%, 0.03) 0%,
-				hsla(235, 0%, 48%, 0.03) 37%,
-				transparent 37%,
-				transparent 100%
+		padding: 3vh 1vw;
+		background-image: repeating-linear-gradient(
+				112.5deg,
+				rgb(0, 0, 0) 0px,
+				rgb(0, 0, 0) 14px,
+				transparent 14px,
+				transparent 15px
 			),
-			radial-gradient(
-				circle at 46% 16%,
-				hsla(235, 0%, 48%, 0.03) 0%,
-				hsla(235, 0%, 48%, 0.03) 43%,
-				transparent 43%,
-				transparent 100%
+			repeating-linear-gradient(
+				22.5deg,
+				rgb(0, 0, 0) 0px,
+				rgb(0, 0, 0) 14px,
+				transparent 14px,
+				transparent 15px
 			),
-			radial-gradient(
-				circle at 99% 25%,
-				hsla(235, 0%, 48%, 0.03) 0%,
-				hsla(235, 0%, 48%, 0.03) 22%,
-				transparent 22%,
-				transparent 100%
-			),
-			radial-gradient(
-				circle at 57% 88%,
-				hsla(235, 0%, 48%, 0.03) 0%,
-				hsla(235, 0%, 48%, 0.03) 86%,
-				transparent 86%,
-				transparent 100%
-			),
-			radial-gradient(
-				circle at 82% 78%,
-				hsla(235, 0%, 48%, 0.03) 0%,
-				hsla(235, 0%, 48%, 0.03) 22%,
-				transparent 22%,
-				transparent 100%
-			),
-			linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
-		box-shadow: 100px 100px 1px -99px rgba(255, 255, 255, 0.171);
+			linear-gradient(
+				90deg,
+				hsl(146, 54%, 44%),
+				hsl(218, 54%, 44%),
+				hsl(290, 54%, 44%),
+				hsl(2, 54%, 44%),
+				hsl(74, 54%, 44%)
+			);
 	}
 	.price__tarif > h3 {
 		align-self: start;

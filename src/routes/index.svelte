@@ -4,6 +4,7 @@
 	import Reviews from '../components/reviews.svelte';
 	import Price from '../components/price.svelte';
 	import ContactMe from '../components/contactMe.svelte';
+	import Ph from '../components/ph.svelte';
 </script>
 
 <!-- <video
@@ -20,6 +21,7 @@
 <VimeoComponent />
 <Reviews />
 <Price />
+<Ph />
 <ContactMe />
 
 <style>

@@ -1,5 +1,5 @@
 {
-  "name": "~TODO~",
+  "name": "sv",
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
@@ -17,5 +17,10 @@
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.34.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "justified-layout": "^4.1.0",
+    "lodash-es": "^4.17.21"
+  }
 }

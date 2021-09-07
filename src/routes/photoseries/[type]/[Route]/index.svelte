@@ -142,7 +142,7 @@
 </script>
 
 <svelte:head>
-	<!-- <title>{gallery.Title}</title> -->
+	<title>{gallery.Title}</title>
 </svelte:head>
 <!-- <Buttondown /> -->
 <h1>

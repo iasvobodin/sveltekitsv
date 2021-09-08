@@ -82,11 +82,11 @@
 		white-space: pre-wrap;
 		text-align: center;
 	}
-	@counter-style repeating-emoji {
+	/* @counter-style repeating-emoji {
 		system: cyclic;
 		symbols: '🐏';
 		suffix: ' ';
-	}
+	} */
 
 	/* // Add this class to the ul or ol element */
 	.repeating-counter-rule {
@@ -96,10 +96,14 @@
 		align-self: stretch;
 		margin-top: 5vh;
 		margin-bottom: 5vh;
-		list-style-type: '🐏 ';
+		/* list-style-type: '🐏 '; */
 		/* list-style: none; */
 		/* padding: 0;
 		margin: 0; */
+	}
+	li {
+		list-style-type: '🐏';
+		padding-inline-start: 1ch;
 	}
 	/* .price__tarif > ul > li {
 		padding-left: 1rem;

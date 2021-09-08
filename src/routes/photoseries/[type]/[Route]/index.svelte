@@ -13,7 +13,7 @@
 </script>
 
 <script>
-	import { debounce } from 'lodash-es/lodash';
+	import debounce from 'lodash/debounce.js';
 	import { onMount, tick } from 'svelte';
 	import justifiedLayout from 'justified-layout';
 	import Spic from '../../../../components/spic.svelte';
@@ -87,7 +87,7 @@
 	}
 	export let gallery;
 	// $: gallery = data;
-	console.log(gallery, 'GALL');
+	// console.log(gallery, 'GALL');
 	function imageWidth(x) {
 		[320, 480, 600, 720, 1024, 1440, 1920, 2560];
 		const calcWidth =
@@ -121,12 +121,12 @@
 		getJL(gallery);
 	}
 	onMount(() => {
-		console.log($typePhotoseries, 'typePhotoseries');
-		console.log('random', anime.random(0, 270));
+		// console.log($typePhotoseries, 'typePhotoseries');
+		// console.log('random', anime.random(0, 270));
 		height = window.innerHeight;
 		width = window.innerWidth;
 
-		console.log('route onmount');
+		// console.log('route onmount');
 
 		window.addEventListener('resize', debounce(resize, 400));
 		paddingCoef = window.innerWidth / window.innerHeight > 1 ? 0.12 : 0.03;
@@ -145,7 +145,7 @@
 	<title>{gallery.Title}</title>
 </svelte:head>
 <!-- <Buttondown /> -->
-<h1>
+<h1 class="price__title">
 	{gallery.Title}
 </h1>
 
@@ -161,6 +161,14 @@
 {/if}
 
 <style>
+	.price__title {
+		font-family: Cormorant Infant;
+		font-size: max(36px, 5.8vw);
+		line-height: max(40px, 5.8vw);
+		font-weight: 300;
+		color: #ffffff;
+		margin: 5vw;
+	}
 	/* .div {
     width: 100%;
  display: block;
@@ -176,9 +184,7 @@
    background-size: contain;
  }
 } */
-	h1 {
-		/* display: none; */
-	}
+
 	.gallery {
 		width: 100%;
 		overflow: hidden;

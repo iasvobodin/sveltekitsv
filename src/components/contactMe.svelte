@@ -1,6 +1,6 @@
 <script>
 	import pricedata from '../../static/db/price.json';
-	import socialdata from '../../static/db/social.json';
+	// import socialdata from '../../static/db/social.json';
 </script>
 
 <h2>Контакты</h2>
@@ -15,21 +15,19 @@
 		<h3 class="contact_title">Свяжитеcь со мной любым удобным способом, или оставьте заявку</h3>
 		<div class="social">
 			<h4>Cоцсети</h4>
-			{#each socialdata.social as el}
+			<!-- {#each socialdata.social as el}
 				<div class="socialicon__holder">
 					<img class="socialicon" src="icons/{el.social}c.svg" alt="" />
 					<img class="socialicon" src="icons/{el.social}b.svg" alt="" />
 				</div>
-				<!-- <p>{el.social}</p> -->
-			{/each}
+			{/each} -->
 			<h4>Написать</h4>
-			{#each socialdata.messagers as el}
+			<!-- {#each socialdata.messagers as el}
 				<div class="socialicon__holder">
 					<img class="socialicon" src="icons/{el.social}c.svg" alt="" />
 					<img class="socialicon" src="icons/{el.social}b.svg" alt="" />
 				</div>
-				<!-- <p>{el.social}</p> -->
-			{/each}
+			{/each} -->
 			<div class="social__holder">
 				<a target="_blank" href="https://vk.com/svobodinaphoto" />
 			</div>
